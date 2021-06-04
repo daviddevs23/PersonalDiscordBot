@@ -9,6 +9,7 @@ from extensions.misc import get_token
 from extensions.test import Test
 
 client = commands.Bot(command_prefix=get_token(0))
+print("bot has started")
 
 # Register extensions
 client.add_cog(Test(client))
