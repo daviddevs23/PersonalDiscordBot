@@ -6,13 +6,14 @@ from discord.ext import commands
 from extensions.misc import get_token
 
 # Import extensions
-from extensions.test import Test
+from extensions.meme import Meme
+from extensions.startup import Startup
 
 client = commands.Bot(command_prefix=get_token(0))
-print("Bot has started")
 
 # Register extensions
-client.add_cog(Test(client))
+client.add_cog(Meme(client))
+client.add_cog(Startup(client))
 
 # Run the bot
 if __name__ == "__main__":

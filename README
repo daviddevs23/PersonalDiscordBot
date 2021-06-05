@@ -3,3 +3,5 @@ This is a Discord Bot built for a server of my friends and I
 Token.txt BreakDown:
 - Command
 - Bot Token
+- Asyncpraw client_id
+- Asyncpraw client_secret
