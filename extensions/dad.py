@@ -2,6 +2,7 @@ import discord
 import os
 import random
 from discord.ext import commands
+from dadjokes import Dadjoke
 
 
 # Classic dad tom-foolery
@@ -29,3 +30,8 @@ class Dad(commands.Cog):
             message = f"Hi{content[imIndex + 3:]}, I'm dad bot"
             
             await ctx.channel.send(message)
+
+    @commands.command()
+    async def dadjoke(self, ctx):
+        dadjoke = Dadjoke()
+        await ctx.send(dadjoke.joke)
