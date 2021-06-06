@@ -10,6 +10,7 @@ from extensions.meme import Meme
 from extensions.startup import Startup
 from extensions.admin import Admin
 from extensions.dad import Dad
+from extensions.music import Music
 
 client = commands.Bot(command_prefix=get_token(0))
 
@@ -18,6 +19,7 @@ client.add_cog(Meme(client))
 client.add_cog(Startup(client))
 client.add_cog(Admin(client))
 client.add_cog(Dad(client))
+client.add_cog(Music(client))
 
 # Run the bot
 if __name__ == "__main__":
